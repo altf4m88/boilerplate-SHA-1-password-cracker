@@ -7,6 +7,7 @@ class UnitTests(unittest.TestCase):
         actual = password_cracker.crack_sha1_hash(
             "18c28604dd31094a8d69dae60f1bcd347f1afc5a")
         expected = "superman"
+        print(actual, expected)
         self.assertEqual(
             actual, expected,
             'Expected function to return "superman" from hash "18c28604dd31094a8d69dae60f1bcd347f1afc5a".'
